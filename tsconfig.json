@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es5", // What to transpile code down too
+    "module": "commonjs", // Mostly determines how the code handles import/export
+    "lib": ["es2015", "dom"], // helps determines the feedback the IDE should give us...
+    "declaration": true,
+    "outDir": "js", // Where to output files
+    "strict": true,
+  }
+}

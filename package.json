@@ -1,0 +1,23 @@
+{
+  "name": "simple-signtool",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djbreen7/simple-signtool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djbreen7/simple-signtool/issues"
+  },
+  "homepage": "https://github.com/djbreen7/simple-signtool#readme",
+  "devDependencies": {
+    "@types/node": "^11.13.2"
+  }
+}
