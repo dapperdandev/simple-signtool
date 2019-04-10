@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as child from 'child_process';
 
-const signtool = path.join(__dirname, 'vendor', 'signtool.exe');
+const signtool = path.join(__dirname, '..', 'vendor', 'signtool.exe');
 
 function execute(command: string) {
     child.exec(command, (err, stdout, stderr) => {
