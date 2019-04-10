@@ -17,6 +17,8 @@ import * as signtool from 'simple-signtool';
 ```typescript 
 sign(target: string, target: string): void
 ```
+
+#### Description
 Sign a specified file with given signtool options
 
 #### Arguments
