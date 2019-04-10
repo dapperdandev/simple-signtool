@@ -11,14 +11,20 @@ import * as signtool from 'simple-signtool';
 ```
 
 ## Documentation
+* [sign](#sign)
 
-### sign(target: string, options: string): void
+### sign
+```typescript 
+sign(target: string, target: string): void
+```
+Sign a specified file with given signtool options
 
 #### Arguments
 |Argument   |Type   |Description|
 |---        |---    |---|
 |**target** |string |The target file that will be signed|
 |**options**|string |Sign options|  
+
   
 #### Example
 ```typescript
