@@ -15,11 +15,11 @@ import * as signtool from 'simple-signtool';
 ### sign(target: string, options: string): void
 
 #### Arguments
-|Argument   |Type   |Description
-|---        |---    |---
-|**target** |string |The target file that will be signed
-|**options**|string |Sign options
-
+|Argument   |Type   |Description|
+|---        |---    |---|
+|**target** |string |The target file that will be signed|
+|**options**|string |Sign options|  
+  
 #### Example
 ```typescript
 import * as signtool from 'simple-signtool';
