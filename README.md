@@ -39,4 +39,4 @@ signtool.sign(file, options);
 ```
 
 ## License
-MIT, please see [LICENSE.md](./license.md) for details.
+MIT, please see [LICENSE.md](license.md) for details.
