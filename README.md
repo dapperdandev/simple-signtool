@@ -37,3 +37,6 @@ const options = `/a /t http://timestamp.verisign.com/scripts/timstamp.dll /v`
 
 signtool.sign(file, options);
 ```
+
+## License
+MIT, please see [LICENSE.md](./license.md) for details.
