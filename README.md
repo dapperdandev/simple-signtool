@@ -15,25 +15,37 @@ import * as signtool from 'simple-signtool';
 
 ### sign
 ```typescript 
-sign(target: string, target: string): void
+sign(target: string, signOptions: ISignOptions): void
 ```
 
 #### Description
 Sign a specified file with given signtool options
 
 #### Arguments
-|Argument   |Type   |Description|
-|---        |---    |---|
-|**target** |string |The target file that will be signed|
-|**options**|string |Sign options|  
+|Argument       |Type   |Description
+|---            |---    |---
+|**target**     |string |The target file that will be signed
+|**signOptions**|ISignOptions |Sign options
+
+##### ISignOptions
+|Property               |Type       |Flag   |Description
+|---                    |---        |---    |---
+|**rawString?**         |string     |       |Raw string of arguments (simple-signtool won't provide flags)
+|**rfcTimeStampUrl?**   |string     |/tr    |Specifies the URL of the RFC 3161 time stamp server
+
 
   
 #### Example
 ```typescript
 import * as signtool from 'simple-signtool';
 
-const file = path.join(__dirname, 'installer.exe');
-const options = `/a /t http://timestamp.verisign.com/scripts/timstamp.dll /v`
+
+const file = path.join(__dirname, 'mathlib.js');
+
+signtool.sign(file, {
+    rawString: '/d mydescription',
+    rfcTimeStampUrl: 'http://sha1timestamp.ws.symantec.com/sha1/timestamp'
+});
 
 signtool.sign(file, options);
 ```
