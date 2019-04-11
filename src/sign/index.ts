@@ -1,6 +1,11 @@
 import { ISignOptions, SignOptionsFlag } from './signoptions';
 import { execute, signtool, Operations } from '../common';
 
+/**
+ * Sign a specified file with given signtool options
+ * @param target The target file that will be signed
+ * @param signOptions Sign options
+ */
 export function sign(target: string, signOptions: ISignOptions): void {
     const options: Array<string> = [];
 
