@@ -1,0 +1,21 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": "plugin:@typescript-eslint/recommended",
+    "rules": {
+        "@typescript-eslint/camelcase": "error",
+        "@typescript-eslint/interface-name-prefix": ["error", "always"],
+        "indent": ["error", "tabs"],
+        "semi": ["error", "always"],
+        "quotes": ["error", ["single", "backtick"]]
+    }
+}
