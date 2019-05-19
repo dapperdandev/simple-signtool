@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/djbreen7/simple-signtool#readme",
   "devDependencies": {
-    "@types/node": "^11.13.2"
+    "@types/jest": "^24.0.13",
+    "@types/node": "^11.13.11",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
   }
 }
