@@ -5,7 +5,7 @@ A simple wrapper around signtool using node exec
 `npm install simple-signtool --save-dev`
 
 ## Usage
-First import `simple-signtool` into your project:  
+First, import `simple-signtool` into your project:  
 ```javascript
 import * as signtool from 'simple-signtool';
 ```
