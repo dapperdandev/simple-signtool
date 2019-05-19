@@ -50,5 +50,13 @@ signtool.sign(file, {
 signtool.sign(file, options);
 ```
 
+## Development
+### Adding Sign Options
+- Add optional option to `ISignOptions`
+- Add the flag representation to `SignOptionsFlag`
+  - `boolean` if no arguments get passed after the flag, e.g., `/f`
+  - `string` if options are passed after the flag, e.g., `/b bar`
+- Write a test
+
 ## License
 MIT, please see [LICENSE.md](LICENSE.md) for details.
