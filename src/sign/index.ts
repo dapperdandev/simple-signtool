@@ -7,19 +7,21 @@ import { execute, signtool, Operations } from '../common';
  * @param signOptions Sign options
  */
 export function sign(target: string, signOptions: ISignOptions): void {
-    const options: Array<string> = [];
+    let options: Array<string> = [];
 
     if (signOptions.rawString)
         options.push(signOptions.rawString);
 
     Object.keys(signOptions).forEach((k: string) => {
         if (signOptions[k] && k !== 'rawString') {
-            const pair: [string, string] = [SignOptionsFlag[k], signOptions[k]];
-            options.push(...pair);
+            const flag = SignOptionsFlag[k];
+            const arg = (typeof signOptions[k] === 'string') ? signOptions[k] : null;
+            const pair: [string, string] = [flag, arg];
+
+            options.push(...pair.filter(o => o)); // prevents extra space
         }
     });
-
+    
     const command = `${signtool} ${Operations.sign} ${options.join(' ')} ${target}`;
     execute(command);
 }
-    
