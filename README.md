@@ -14,13 +14,12 @@ import * as signtool from 'simple-signtool';
 ```
 
 ## Contributing
-### Adding Sign Options Example
-- Add optional option to `ISignOptions`
-- Add the flag representation to `SignOptionsFlag`
-  - `boolean` if no arguments get passed after the flag, e.g., `/f`
-  - `string` if options are passed after the flag, e.g., `/b bar`
-- Write tests
-- Run `npm test`, `npm run lint`, and `npm run docs`
+1. Fork this repository
+2. Write/edit code
+3. Write tests
+4. Run `npm run lint` to verify code linting is passing and make updates to your code as linter suggests
+5. Run `npm test` to verify tests are passing
+6. Open a pull request
 
 ## License
 MIT, please see [LICENSE.md](LICENSE.md) for details.
