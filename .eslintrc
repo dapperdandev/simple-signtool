@@ -14,8 +14,9 @@
     "rules": {
         "@typescript-eslint/camelcase": "error",
         "@typescript-eslint/interface-name-prefix": ["error", "always"],
-        "indent": ["error", "tabs"],
+        "@typescript-eslint/array-type": ["error", "generic"],
+        "indent": ["error", 4],
         "semi": ["error", "always"],
-        "quotes": ["error", ["single", "backtick"]]
+        "quotes": ["error", "single"]
     }
 }
