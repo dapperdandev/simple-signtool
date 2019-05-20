@@ -15,7 +15,7 @@
         "@typescript-eslint/camelcase": "error",
         "@typescript-eslint/interface-name-prefix": ["error", "always"],
         "@typescript-eslint/array-type": ["error", "generic"],
-        "indent": ["error", 4],
+        "@typescript-eslint/indent": ["error", 4],
         "semi": ["error", "always"],
         "quotes": ["error", "single"]
     }
