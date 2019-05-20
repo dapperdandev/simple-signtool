@@ -3,6 +3,7 @@
     "out": "docs",
     "exclude": [
         "**/common/*",
+        "**/utils/*",
         "**/sign/signOptionsFlag.enum.ts"
     ],
     "theme": "markdown",
