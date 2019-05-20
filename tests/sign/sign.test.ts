@@ -16,9 +16,20 @@ describe('SIGN', (): void => {
 
     test('RFC Time Stamp URL Option Produces Correct String', (): void => {
         const url = 'https://www.example.com';
-        const expectedResult = buildSignCommand(`/tr ${url}`, target);
+        const digestAlgorithm = 'sha256';
+        const expectedResult = buildSignCommand(`/tr ${url} /td sha256`, target);
 
-        sign(target, { rfcTimeStampUrl: url });
+        sign(target, { rfcTimeStampUrl: { url: url, digestAlgorithm: digestAlgorithm } });
+
+        expect(spy).toHaveBeenCalledWith(expectedResult);
+    });
+
+    test('Sign Cert File Option Produces Correct String', (): void => {
+        const file = 'mycert.pfx';
+        const password = 'password';
+        const expectedResult = buildSignCommand(`/f ${file} /p ${password}`, target);
+
+        sign(target, { signCertFile: { file: file, password: password } });
 
         expect(spy).toHaveBeenCalledWith(expectedResult);
     });

@@ -1,14 +1,43 @@
 export interface ISignOptions {
     /** Raw string of arguments (simple-signtool won't provide flags) */
     rawString?: string;
+    
     /**
      * Selects the best signing certificate automatically. If this option is not present, SignTool expects to find only one valid signing certificate.
      */
     auto?: boolean;
+
     /**
-     * Specifies the RFC 3161 time stamp server's URL. If this option (or /t) is not specified, the signed file will not be time stamped. A warning is generated if time stamping fails. This switch cannot be used with the /t switch.
-     * 
-     * Windows Vista and earlier: This flag is not supported.
+     * RFC Time Stamp. If this option or `timeStampUrl` (TODO) is not present, the signed file will not be time stamped.
      */
-    rfcTimeStampUrl?: string;
+    rfcTimeStampUrl?: IRFCTimeStamp;
+
+    /**
+     * Sign Cert File
+     */
+    signCertFile?: ISignCertFile;
+}
+
+interface IRFCTimeStamp {
+    /**
+     * Specifies the RFC 3161 time stamp server's URL.
+     */
+    url: string;
+
+    /**
+     * Used with the `rfcTimeStampUrl.url` option to request a digest algorithm used by the RFC 3161 time stamp server.
+     */
+    digestAlgorithm?: 'sha256';
+}
+
+interface ISignCertFile {
+    /**
+     * Specifies the signing certificate in a file.
+     */
+    file: string;
+
+    /**
+     * Use if the file is in Personal Information Exchange (PFX) format and protected by a password.
+     */
+    password?: string;
 }
