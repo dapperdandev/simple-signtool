@@ -23,6 +23,6 @@ export function sign(target: string, signOptions: ISignOptions): void {
         }
     });
 
-    const command = `${signtool} ${Operations.sign} ${options.join(' ')} ${target}`;
+    const command = `${signtool} ${Operations.sign} ${options.join(' ')} "${target}"`;
     execute(command);
 }
