@@ -12,16 +12,16 @@ export function sign(target: string, signOptions: ISignOptions): void {
     if (signOptions.rawString)
         options.push(signOptions.rawString);
 
-    Object.keys(signOptions).forEach((k: string) => {
+    Object.keys(signOptions).forEach((k: string): void => {
         if (signOptions[k] && k !== 'rawString') {
             const flag = SignOptionsFlag[k];
             const arg = (typeof signOptions[k] === 'string') ? signOptions[k] : null;
             const pair: [string, string] = [flag, arg];
 
-            options.push(...pair.filter(o => o)); // prevents extra space
+            options.push(...pair.filter((o): string => o)); // prevents extra space
         }
     });
-    
+
     const command = `${signtool} ${Operations.sign} ${options.join(' ')} ${target}`;
     execute(command);
 }
