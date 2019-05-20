@@ -7,6 +7,6 @@ export function execute(command: string): void {
             throw err;
         }
 
-        console.log(stdout);
+        console.log('Command executed successfully.');
     });
 }
