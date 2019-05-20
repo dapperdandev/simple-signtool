@@ -21,7 +21,10 @@ const file = path.join(__dirname, 'my.exe');
 
 signtool.sign(file, {
     rawString: '/d mydescription',
-    rfcTimeStampUrl: 'http://sha1timestamp.ws.symantec.com/sha1/timestamp'
+    rfcTimeStampUrl: {
+        url: 'http://sha1timestamp.ws.symantec.com/sha1/timestamp',
+        digestAlgorithm: 'sha256'
+    }
 });
 
 signtool.sign(file, options);
