@@ -1,4 +1,5 @@
-import { ISignOptions, SignOptionsFlag } from './signoptions';
+import { SignOptionsFlag } from './signOptionsFlag.enum';
+import { ISignOptions } from './signoptions.interface';
 import { execute, signtool, Operations } from '../common';
 
 /**

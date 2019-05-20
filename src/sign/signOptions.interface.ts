@@ -3,8 +3,3 @@ export interface ISignOptions {
     auto?: boolean;
     rfcTimeStampUrl?: string;
 }
-
-export enum SignOptionsFlag {
-    auto = '/a',
-    rfcTimeStampUrl = '/tr'
-}
