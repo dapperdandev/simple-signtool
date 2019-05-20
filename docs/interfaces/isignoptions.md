@@ -13,6 +13,7 @@
 * [auto](isignoptions.md#auto)
 * [rawString](isignoptions.md#rawstring)
 * [rfcTimeStampUrl](isignoptions.md#rfctimestampurl)
+* [signCertFile](isignoptions.md#signcertfile)
 
 ---
 
@@ -24,7 +25,7 @@
 
 **● auto**: *`undefined` \| `false` \| `true`*
 
-*Defined in sign/signoptions.interface.ts:7*
+*Defined in sign/signoptions.interface.ts:8*
 
 Selects the best signing certificate automatically. If this option is not present, SignTool expects to find only one valid signing certificate.
 
@@ -44,13 +45,22 @@ ___
 
 ### `<Optional>` rfcTimeStampUrl
 
-**● rfcTimeStampUrl**: *`undefined` \| `string`*
+**● rfcTimeStampUrl**: *[IRFCTimeStamp](irfctimestamp.md)*
 
 *Defined in sign/signoptions.interface.ts:13*
 
-Specifies the RFC 3161 time stamp server's URL. If this option (or /t) is not specified, the signed file will not be time stamped. A warning is generated if time stamping fails. This switch cannot be used with the /t switch.
+RFC Time Stamp. If this option or `timeStampUrl` (TODO) is not present, the signed file will not be time stamped.
 
-Windows Vista and earlier: This flag is not supported.
+___
+<a id="signcertfile"></a>
+
+### `<Optional>` signCertFile
+
+**● signCertFile**: *[ISignCertFile](isigncertfile.md)*
+
+*Defined in sign/signoptions.interface.ts:18*
+
+Sign Cert File
 
 ___
 
