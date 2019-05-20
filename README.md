@@ -13,6 +13,20 @@ First, import `simple-signtool` into your project:
 import * as signtool from 'simple-signtool';
 ```
 
+### Example
+```typescript
+import * as signtool from 'simple-signtool';
+
+const file = path.join(__dirname, 'my.exe');
+
+signtool.sign(file, {
+    rawString: '/d mydescription',
+    rfcTimeStampUrl: 'http://sha1timestamp.ws.symantec.com/sha1/timestamp'
+});
+
+signtool.sign(file, options);
+```
+
 ## Contributing
 1. Fork this repository
 2. Write/edit code
