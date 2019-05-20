@@ -1,5 +1,5 @@
 # Simple Signtool
-A simple wrapper around signtool using node exec
+A simple wrapper around signtool using node `exec`. 
 
 ## Installation
 `npm install simple-signtool --save-dev`
@@ -31,6 +31,7 @@ Sign a specified file with given signtool options
 |Property               |Type       |Flag   |Description
 |---                    |---        |---    |---
 |**rawString?**         |string     |       |Raw string of arguments (simple-signtool won't provide flags)
+|**auto?**              |boolean    |/a     |Automatically selects the best signing certificate.
 |**rfcTimeStampUrl?**   |string     |/tr    |Specifies the URL of the RFC 3161 time stamp server
 
 
@@ -56,7 +57,8 @@ signtool.sign(file, options);
 - Add the flag representation to `SignOptionsFlag`
   - `boolean` if no arguments get passed after the flag, e.g., `/f`
   - `string` if options are passed after the flag, e.g., `/b bar`
-- Write a test
+- Write tests
+- Add your documentation to the README
 
 ## License
 MIT, please see [LICENSE.md](LICENSE.md) for details.
