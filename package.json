@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "lint": "eslint \"src/**\" \"tests/**\""
+    "lint": "eslint \"src/**\" \"tests/**\"",
+    "docs": "typedoc src/"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
     "ts-jest": "^24.0.2",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.2.1",
     "typescript": "^3.4.5"
   }
 }

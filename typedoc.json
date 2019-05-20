@@ -1,0 +1,10 @@
+{
+    "mode": "file",
+    "out": "docs",
+    "exclude": [
+        "**/common/*",
+        "**/sign/signOptionsFlag.enum.ts"
+    ],
+    "theme": "markdown",
+    "readme": "none"
+}
