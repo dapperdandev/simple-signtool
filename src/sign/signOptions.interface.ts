@@ -33,7 +33,18 @@ interface IRFCTimeStamp {
 interface ISignCertFile {
     /**
      * Specifies the signing certificate in a file.
-     */
+     * 
+     * **Example:**
+     * ```typescript
+    * const options: ISignOptions = {
+    *     rawString: `${signOptions} /d ${exe}`,
+    *     signCertFile: {
+    *         file: '\"C:\\My Certs\\mycert.pfx\"',
+    *         password: 'password'
+    *     }
+    * };
+    * ```
+    */
     file: string;
 
     /**

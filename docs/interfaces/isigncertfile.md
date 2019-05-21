@@ -23,9 +23,21 @@
 
 **● file**: *`string`*
 
-*Defined in sign/signoptions.interface.ts:37*
+*Defined in sign/signoptions.interface.ts:48*
 
 Specifies the signing certificate in a file.
+
+**Example:**
+
+```typescript
+const options: ISignOptions = {
+    rawString: `${signOptions} /d ${exe}`,
+    signCertFile: {
+        file: '\"C:\\My Certs\\mycert.pfx\"',
+        password: 'password'
+    }
+};
+```
 
 ___
 <a id="password"></a>
@@ -34,7 +46,7 @@ ___
 
 **● password**: *`undefined` \| `string`*
 
-*Defined in sign/signoptions.interface.ts:42*
+*Defined in sign/signoptions.interface.ts:53*
 
 Use if the file is in Personal Information Exchange (PFX) format and protected by a password.
 

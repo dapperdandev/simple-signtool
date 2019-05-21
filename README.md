@@ -31,8 +31,25 @@ signtool.sign(file, options);
 ```
 
 ## Contributing
+### Guidelines
+- Independent options should be in the top-level options interface, e.g., `rawString`
+- Options that depend on each other should be in their own interface.  
+  **Example:**
+  ```typescript
+  export interface ISignOptions {
+      rfcTimeStampUrl?: IRFCTimeStamp;
+  }
+
+  interface IRFCTimeStamp {
+      url: string;
+      digestAlgorithm?: 'sha256'; // depends on 'url'
+  }
+  ```
+
+### Steps
 1. Fork this repository
 2. Write/edit code
+3. Add documentation using [typedoc doc comments](https://typedoc.org/guides/doccomments/)
 3. Write tests
 4. Run `npm run lint` to verify code linting is passing and make updates to your code as linter suggests
 5. Run `npm test` to verify tests are passing
