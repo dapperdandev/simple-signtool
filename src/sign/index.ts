@@ -1,7 +1,7 @@
 import { SignOptionsFlag } from './signOptionsFlag.enum';
 import { ISignOptions } from './signoptions.interface';
 import { execute, signtool, Operations } from '../common';
-import { flatten } from '../utils/flatten';
+import { flatten } from '../utils';
 
 /**
  * Sign a specified file with given signtool options
