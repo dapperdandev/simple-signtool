@@ -2,7 +2,8 @@
 A simple wrapper around signtool using node `exec`.
 
 ## Documentation
-This library's documentation can be found in the docs folder [here](docs/README.md). The official Microsoft Documentation is at: https://docs.microsoft.com/en-us/windows/desktop/seccrypto/signtool
+- [Project Documentation](docs/README.md)
+- [MS Signtool Documentation](https://docs.microsoft.com/en-us/windows/desktop/seccrypto/signtool)
 
 ## Installation
 `npm install simple-signtool --save-dev`
