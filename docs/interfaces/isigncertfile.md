@@ -23,7 +23,7 @@
 
 **● file**: *`string`*
 
-*Defined in [sign/sign-options.interface.ts:48](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L48)*
+*Defined in [sign/sign-options.interface.ts:48](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L48)*
 
 Specifies the signing certificate in a file.
 
@@ -46,7 +46,7 @@ ___
 
 **● password**: *`undefined` \| `string`*
 
-*Defined in [sign/sign-options.interface.ts:53](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L53)*
+*Defined in [sign/sign-options.interface.ts:53](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L53)*
 
 Use if the file is in Personal Information Exchange (PFX) format and protected by a password.
 

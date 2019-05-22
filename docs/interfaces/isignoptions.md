@@ -25,7 +25,7 @@
 
 **● auto**: *`undefined` \| `false` \| `true`*
 
-*Defined in [sign/sign-options.interface.ts:8](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L8)*
+*Defined in [sign/sign-options.interface.ts:8](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L8)*
 
 Selects the best signing certificate automatically. If this option is not present, SignTool expects to find only one valid signing certificate.
 
@@ -36,7 +36,7 @@ ___
 
 **● rawString**: *`undefined` \| `string`*
 
-*Defined in [sign/sign-options.interface.ts:3](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L3)*
+*Defined in [sign/sign-options.interface.ts:3](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L3)*
 
 Raw string of arguments (simple-signtool won't provide flags)
 
@@ -47,7 +47,7 @@ ___
 
 **● rfcTimeStampUrl**: *[IRFCTimeStamp](irfctimestamp.md)*
 
-*Defined in [sign/sign-options.interface.ts:13](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L13)*
+*Defined in [sign/sign-options.interface.ts:13](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L13)*
 
 RFC Time Stamp. If this option or `timeStampUrl` (TODO) is not present, the signed file will not be time stamped.
 
@@ -58,7 +58,7 @@ ___
 
 **● signCertFile**: *[ISignCertFile](isigncertfile.md)*
 
-*Defined in [sign/sign-options.interface.ts:18](https://github.com/djbreen7/simple-signtool/blob/866a0b7/src/sign/sign-options.interface.ts#L18)*
+*Defined in [sign/sign-options.interface.ts:18](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.interface.ts#L18)*
 
 Sign Cert File
 
