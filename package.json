@@ -9,7 +9,7 @@
     "lint": "eslint \"src/**\" \"tests/**\"",
     "docs": "typedoc src/",
     "clean": "node_modules/.bin/rimraf ./dist",
-    "build": "npm run clean && tsc && npm run docs",
+    "build": "npm run clean && tsc",
     "prepublishOnly": "npm run build && npm-publish-files dist",
     "dist": "cd dist && npm publish"
   },
