@@ -1,5 +1,5 @@
 import { flatten } from '../../src/utils';
-import { ISignOptions } from '../../src/sign/signoptions.interface';
+import { ISignOptions } from '../../src/sign/sign-options.interface';
 
 describe('FLATTEN', (): void => {
     test('Produces Correct Keys for Nested Objects', (): void => {

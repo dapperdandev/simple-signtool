@@ -1,4 +1,4 @@
-import { ISignOptions } from '../sign/signoptions.interface';
+import { ISignOptions } from '../sign/sign-options.interface';
 
 export function flatten(obj: ISignOptions, parentKey?: string, flatObj: { rawString?: string} = {}): { rawString?: string } {
     Object.keys(obj).forEach((k): void => {
