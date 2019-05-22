@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint \"src/**\" \"tests/**\"",
-    "docs": "typedoc src/"
+    "docs": "typedoc src/",
+    "publish-compiled": "npm publish dist"
   },
   "repository": {
     "type": "git",
