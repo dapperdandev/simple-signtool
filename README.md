@@ -3,7 +3,7 @@ A simple wrapper around signtool using node `exec`.
 
 ## Documentation
 - [Project Documentation](docs/README.md)
-- [MS Signtool Documentation](https://docs.microsoft.com/en-us/windows/desktop/seccrypto/signtool)
+- [Microsoft&reg; Signtool Documentation](https://docs.microsoft.com/en-us/windows/desktop/seccrypto/signtool)
 
 ## Installation
 `npm install simple-signtool --save-dev`
