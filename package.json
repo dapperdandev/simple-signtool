@@ -2,16 +2,16 @@
   "name": "simple-signtool",
   "version": "0.7.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "lint": "eslint \"src/**\" \"tests/**\"",
     "docs": "typedoc src/",
-    "publish-compiled": "npm publish dist"
+    "clean": "node_modules/.bin/rimraf ./dist",
+    "copypackage": "cp -rf package.json dist",
+    "build": "npm run clean && tsc && npm run copypackage",
+    "dist": "cd dist && npm publish"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "@typescript-eslint/parser": "^1.9.0",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "typedoc": "^0.14.2",
     "typedoc-plugin-markdown": "^1.2.1",
