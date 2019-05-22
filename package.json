@@ -9,8 +9,8 @@
     "lint": "eslint \"src/**\" \"tests/**\"",
     "docs": "typedoc src/",
     "clean": "node_modules/.bin/rimraf ./dist",
-    "copypackage": "cp -rf package.json dist",
-    "build": "npm run clean && tsc && npm run copypackage",
+    "build": "npm run clean && tsc && npm run docs",
+    "prepublishOnly": "npm-publish-files dist",
     "dist": "cd dist && npm publish"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "@typescript-eslint/parser": "^1.9.0",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
+    "npm-publish-files": "^1.0.11",
     "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "typedoc": "^0.14.2",
