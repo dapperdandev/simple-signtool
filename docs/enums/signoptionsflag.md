@@ -22,7 +22,7 @@
 
 **auto**:  = "/a"
 
-*Defined in [sign/sign-options.flags.ts:3](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.flags.ts#L3)*
+*Defined in [sign/sign-options.flags.ts:3](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign-options.flags.ts#L3)*
 
 ___
 <a id="rfctimestampurl_digestalgorithm"></a>
@@ -31,7 +31,7 @@ ___
 
 **rfcTimeStampUrl_digestAlgorithm**:  = "/td"
 
-*Defined in [sign/sign-options.flags.ts:5](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.flags.ts#L5)*
+*Defined in [sign/sign-options.flags.ts:5](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign-options.flags.ts#L5)*
 
 ___
 <a id="rfctimestampurl_url"></a>
@@ -40,7 +40,7 @@ ___
 
 **rfcTimeStampUrl_url**:  = "/tr"
 
-*Defined in [sign/sign-options.flags.ts:4](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.flags.ts#L4)*
+*Defined in [sign/sign-options.flags.ts:4](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign-options.flags.ts#L4)*
 
 ___
 <a id="signcertfile_file"></a>
@@ -49,7 +49,7 @@ ___
 
 **signCertFile_file**:  = "/f"
 
-*Defined in [sign/sign-options.flags.ts:6](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.flags.ts#L6)*
+*Defined in [sign/sign-options.flags.ts:6](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign-options.flags.ts#L6)*
 
 ___
 <a id="signcertfile_password"></a>
@@ -58,7 +58,7 @@ ___
 
 **signCertFile_password**:  = "/p"
 
-*Defined in [sign/sign-options.flags.ts:7](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign-options.flags.ts#L7)*
+*Defined in [sign/sign-options.flags.ts:7](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign-options.flags.ts#L7)*
 
 ___
 

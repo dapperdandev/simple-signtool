@@ -27,7 +27,7 @@
 
 ▸ **sign**(target: *`string`*, signOptions: *[ISignOptions](interfaces/isignoptions.md)*): `void`
 
-*Defined in [sign/sign.ts:11](https://github.com/djbreen7/simple-signtool/blob/5b3421b/src/sign/sign.ts#L11)*
+*Defined in [sign/sign.ts:11](https://github.com/djbreen7/simple-signtool/blob/63ea9b6/src/sign/sign.ts#L11)*
 
 Sign a specified file with given signtool options
 
