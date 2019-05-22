@@ -9,10 +9,10 @@
     "vendor"
   ],
   "scripts": {
-    "test": "jest",
     "lint": "eslint \"src/**\" \"tests/**\"",
-    "docs": "typedoc src/",
     "clean": "node_modules/.bin/rimraf ./dist",
+    "docs": "typedoc src/",
+    "test": "jest && npm run lint",
     "build": "npm run clean && tsc",
     "prepublishOnly": "npm run build"
   },
