@@ -25,7 +25,7 @@
 
 **● auto**: *`undefined` \| `false` \| `true`*
 
-*Defined in sign/signoptions.interface.ts:8*
+*Defined in sign/sign-options.interface.ts:8*
 
 Selects the best signing certificate automatically. If this option is not present, SignTool expects to find only one valid signing certificate.
 
@@ -36,7 +36,7 @@ ___
 
 **● rawString**: *`undefined` \| `string`*
 
-*Defined in sign/signoptions.interface.ts:3*
+*Defined in sign/sign-options.interface.ts:3*
 
 Raw string of arguments (simple-signtool won't provide flags)
 
@@ -47,7 +47,7 @@ ___
 
 **● rfcTimeStampUrl**: *[IRFCTimeStamp](irfctimestamp.md)*
 
-*Defined in sign/signoptions.interface.ts:13*
+*Defined in sign/sign-options.interface.ts:13*
 
 RFC Time Stamp. If this option or `timeStampUrl` (TODO) is not present, the signed file will not be time stamped.
 
@@ -58,7 +58,7 @@ ___
 
 **● signCertFile**: *[ISignCertFile](isigncertfile.md)*
 
-*Defined in sign/signoptions.interface.ts:18*
+*Defined in sign/sign-options.interface.ts:18*
 
 Sign Cert File
 

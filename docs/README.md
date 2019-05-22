@@ -3,6 +3,10 @@
 
 ## Index
 
+### Enumerations
+
+* [SignOptionsFlag](enums/signoptionsflag.md)
+
 ### Interfaces
 
 * [IRFCTimeStamp](interfaces/irfctimestamp.md)
@@ -23,7 +27,7 @@
 
 ▸ **sign**(target: *`string`*, signOptions: *[ISignOptions](interfaces/isignoptions.md)*): `void`
 
-*Defined in [sign/index.ts:11](https://github.com/djbreen7/simple-signtool/blob/8203adf/src/sign/index.ts#L11)*
+*Defined in sign/sign.ts:11*
 
 Sign a specified file with given signtool options
 
