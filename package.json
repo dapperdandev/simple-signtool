@@ -11,7 +11,7 @@
   "scripts": {
     "lint": "eslint \"src/**\" \"tests/**\"",
     "clean": "node_modules/.bin/rimraf ./dist",
-    "docs": "typedoc src/",
+    "docs": "typedoc src/ && git add docs && git commit -m \"Update Docs\" && git push origin master",
     "test": "jest && npm run lint",
     "build": "npm run clean && tsc",
     "prepublishOnly": "npm run build"
