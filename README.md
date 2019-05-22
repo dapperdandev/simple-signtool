@@ -49,11 +49,13 @@ signtool.sign(file, options);
 
 ### Steps
 1. Fork this repository
-2. Write/edit code
-3. Add documentation using [typedoc doc comments](https://typedoc.org/guides/doccomments/)
-3. Write tests
-4. Run `npm run lint` to verify code linting is passing and make updates to your code as linter suggests
-5. Run `npm test` to verify tests are passing
+2. Get project working locally
+    - `git clone git@github.com:<yourusername>/simple-signtool.git`
+    - `cd simple-signtool`
+    - `npm install`
+3. Write/edit code
+4. Write tests
+5. Run `npm test` and fix any errors
 6. Open a pull request
 
 ## License
