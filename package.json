@@ -10,7 +10,7 @@
     "docs": "typedoc src/",
     "clean": "node_modules/.bin/rimraf ./dist",
     "build": "npm run clean && tsc && npm run docs",
-    "prepublishOnly": "npm-publish-files dist",
+    "prepublishOnly": "npm run build && npm-publish-files dist",
     "dist": "cd dist && npm publish"
   },
   "repository": {
