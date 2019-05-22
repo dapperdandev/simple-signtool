@@ -4,8 +4,7 @@
     "exclude": [
         "**/common/*",
         "**/utils/*",
-        "**/sign/signOptionsFlag.enum.ts"
+        "**/sign/sign-options.flags.ts"
     ],
-    "theme": "markdown",
     "readme": "none"
 }

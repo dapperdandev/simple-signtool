@@ -2,7 +2,7 @@
 A simple wrapper around signtool using node `exec`.
 
 ## Documentation
-- [Project Documentation](docs/README.md)
+- [Project Documentation](https://djbreen7.github.io/simple-signtool)
 - [Microsoft&reg; Signtool Documentation](https://docs.microsoft.com/en-us/windows/desktop/seccrypto/signtool)
 
 ## Installation
