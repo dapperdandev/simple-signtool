@@ -1,7 +1,7 @@
 export interface ISignOptions {
     /** Raw string of arguments (simple-signtool won't provide flags) */
     rawString?: string;
-    
+
     /**
      * Selects the best signing certificate automatically. If this option is not present, SignTool expects to find only one valid signing certificate.
      */
@@ -16,6 +16,11 @@ export interface ISignOptions {
      * Sign Cert File
      */
     signCertFile?: ISignCertFile;
+
+    /**
+     * Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.
+     */
+    expandedDescription?: string;
 }
 
 interface IRFCTimeStamp {

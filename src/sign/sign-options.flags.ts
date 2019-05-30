@@ -4,5 +4,6 @@ export enum SignOptionsFlag {
     rfcTimeStampUrl_url = '/tr',
     rfcTimeStampUrl_digestAlgorithm = '/td',
     signCertFile_file = '/f',
-    signCertFile_password = '/p'
+    signCertFile_password = '/p',
+    expandedDescription = '/du'
 }
