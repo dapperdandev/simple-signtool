@@ -18,6 +18,11 @@ export interface ISignOptions {
     signCertFile?: ISignCertFile;
 
     /**
+     * Specifies a description of the signed content.
+     */
+    description?: string;
+
+    /**
      * Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.
      */
     expandedDescription?: string;

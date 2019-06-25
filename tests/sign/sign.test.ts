@@ -34,6 +34,15 @@ describe('SIGN', (): void => {
         expect(spy).toHaveBeenCalledWith(expectedResult);
     });
 
+    test('Description Option Produces Correct String', (): void => {
+        const description = 'lorem ipsum';
+        const expectedResult = buildSignCommand(`/d ${description}`, target);
+
+        sign(target, { description });
+
+        expect(spy).toHaveBeenCalledWith(expectedResult);
+    });
+
     test('Expanded Description Option Produces Correct String', (): void => {
         const url = 'http://myproduct.com/info.html';
         const expectedResult = buildSignCommand(`/du ${url}`, target);
