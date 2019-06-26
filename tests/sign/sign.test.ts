@@ -51,4 +51,8 @@ describe('SIGN', (): void => {
 
         expect(spy).toHaveBeenCalledWith(expectedResult);
     });
+
+    test('RJ Demo', (): void => {
+        expect(true).toBeFalsy();
+    })
 });
